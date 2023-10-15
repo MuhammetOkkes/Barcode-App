@@ -2,7 +2,7 @@
 
 header("Access-Control-Allow-Origin: *");
 try {
-    $db = new PDO('mysql:host={your host};dbname={your db name}','root','root');
+    $db = new PDO('mysql:host={your host};dbname={your db name}','{user name}','{password}');
 } catch (PDOException $e) {
     print "Error!: " . $e ->getMessage() . "<br/>";
     die();
