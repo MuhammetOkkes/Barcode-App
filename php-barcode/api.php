@@ -2,7 +2,7 @@
 
 header("Access-Control-Allow-Origin: *");
 try {
-    $db = new PDO('mysql:host=localhost;dbname=barcodes','root','root');
+    $db = new PDO('mysql:host={your host};dbname={your db name}','root','root');
 } catch (PDOException $e) {
     print "Error!: " . $e ->getMessage() . "<br/>";
     die();
